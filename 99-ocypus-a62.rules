@@ -1,0 +1,2 @@
+# Limit access to the vendor HID interface on the Iota A62 (not its keyboard interface).
+SUBSYSTEM=="hidraw", ENV{ID_VENDOR_ID}=="1a2c", ENV{ID_MODEL_ID}=="434d", ENV{ID_USB_INTERFACE_NUM}=="01", GROUP="ocypus-a62", MODE="0660"
